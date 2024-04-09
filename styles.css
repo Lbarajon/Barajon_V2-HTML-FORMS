@@ -1,0 +1,307 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Chicken;
+    src: url(fonts/CHICKEN\ Pie.ttf);
+}
+@font-face {
+    font-family: Sunny;
+    src: url(fonts/Sunny\ Spells\ Basic.ttf);
+}
+@font-face {
+    font-family: Duck;
+    src: url(fonts/Copyduck.ttf);
+}
+body {
+    color: black;
+    background-color: #FFA07A;
+    font-size: 15px;
+    line-height: 1.5;
+    font-size: 30px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo {
+    max-width: 210px;
+    float: left;
+    
+}
+
+.order-form-header {
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur;
+    box-shadow: 0 25px 50px rgba(0, 0, 12, 0.1);
+    border-radius: 5px;
+
+    padding: 30px;
+}
+
+.order-form-header h1 {
+    font-family: Duck;
+    font-size: 85px;
+    text-align: center;
+}
+
+.order-form-header h2 {
+    font-family: Sunny;
+    font-size: 45px;
+    text-align: center;
+}
+
+p {
+    margin-top: 40px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center; 
+}
+
+.order-form {
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    margin-top: 30px;
+    
+    padding: 50px;
+    align-items: center;
+    width: 1000px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.form-row input [type= "text"],
+.form-row input[type="text"],
+.form-row select,
+.form-row textarea {
+    background-color: #ffffff;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 70%;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.form-row input [type= "text"],
+.form-row input[type="email"],
+.form-row select,
+.form-row textarea {
+    background-color: #ffffff;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 70%;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.form-row input [type= "text"],
+.form-row input[type="age"],
+.form-row select,
+.form-row textarea {
+    background-color: #ffffff;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 70%;
+    padding: 11px;
+    font-size: 14px;
+}
+
+.form-row textarea {
+    font-family: Chicken;
+    font-size: 14px;
+
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+
+    min-height: 190px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+
+.form-row .instructions {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.radio-options {
+    padding: 5px;
+    width: 88%;
+    font-size: 17px;
+    margin-top: 1em;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 1em;
+  }
+  
+  .radio-options span {
+    margin-right: 50px;
+    font-size: 29px;
+  }
+
+  .line {
+    border: 1px solid white;
+    padding-top: 50px;
+  }
+
+@media only screen and (min-width: 700px) {
+    .order-form-header,
+    .order-form {
+        width: 1000px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start; 
+        margin-bottom: 20px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 70px;
+    }  
+    .form-row .instructions {
+        margin-left: 240px;
+    }
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+}
+
+.form-row label {
+    margin-right: 40px;
+}
+
+.form-row select {
+    width: 70%;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.dropdown {
+    margin-top: 10px;
+   
+  }
+
+.dropdownbtn {
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    width: 88%;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+  }
+
+  .options-dropdown {
+    margin-top: 50px;
+    list-style: none;
+    position: absolute;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+  }
+  
+  .options-dropdown li {
+    border: 1px solid rgb(250, 214, 188);
+    cursor: pointer;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .submenu {
+    margin-left: 400px;
+    list-style: none;
+    position: absolute;
+    margin-top: 5px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  
+  .submenu li {
+    border: 1px solid rgb(250, 214, 188);
+    cursor: pointer;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 20px;
+    gap: 4px;
+    padding: 10px;
+  }
+
+  .btn-order {
+    width: 900px;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+    font-family: Sunny;
+    font-size: 50px;
+}
+
+.btn-cancel {
+    width: 900px;
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 70px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+    font-family: Sunny;
+    font-size: 50px;
+}

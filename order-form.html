@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESSERTILICIOUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="order-form-header">
+        <img src="images/logo.png" class="logo"/>       
+        <h1>
+            DESSERTILICIOUS
+        </h1>
+        <h2>
+            Your Satisfaction Is What We Work For!
+        </h2>
+        <p>
+            We ensure you that these desserts are top quality, well made, safe and handled with care. 
+        </p>
+    </header>
+
+    <form action="" method="get" class="order-form">
+        <div class="form-row">
+            <label for="full-name">Name:</label>
+            <input id="ful-name" name="full-name" type="text"/>
+         </div> 
+
+         <div class="form-row">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="ex:liah@gmail.com" />
+        </div>
+
+        <div class="form-row">
+            <label for="age">Age:</label>
+            <input id="age" name="age" type="text">
+        </div>
+
+        <div class="form-row">
+            <label for="t-shirt">Payment:</label>
+            <select id="t-shirt" name="t-shirt">
+            <option value="cod">CASH ON DELIVERY</option>
+            <option value="gcash">GCASH</option>
+            <option value="maya">PAY MAYA</option>
+            </select>
+        </div>
+
+        <div class="radio-options">
+            <span>WE OFFER</span>
+            <span class="line"></span>
+            <label><input type="radio" name="option" value="option1"> DINE-INE</label>
+            <label><input type="radio" name="option" value="option2"> TAKE-OUT</label>
+        </div>
+
+        <div class="dropdown form-row">
+            <a  class="dropdownbtn">
+                MENU
+            </a>
+            <ul class="options-dropdown">
+                <li>Cupcakes
+                    <ul class="submenu">
+                        <li>Chocolate </li>
+                        <li>Vanilla </li>
+                        <li>Red Velvet</li>
+                    </ul>
+                </li>
+
+                <li>Cakes
+                    <ul class="submenu">
+                        <li>Choco Mousse Cake</li>
+                        <li>White Cake and Vanilla</li>
+                        <li>Rainbow Cake</li>
+                    </ul>
+                </li>
+
+                <li>Milkshake
+                    <ul class="submenu">
+                        <li>Chocolate Chip Cooki</li>
+                        <li>Salted Caramel</li>
+                        <li>Nutella</li>
+                    </ul>
+                </li>
+
+                <li>Cookies
+                    <ul class="submenu">
+                        <li>Triple Chocolate</li>
+                        <li>Biscoff Butter</li>
+                        <li>Oreo Cheesecake</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-row">
+            <label for="comment">Comments</label>
+            <textarea id="comment" name="comment"></textarea>
+            <div class="instructions">For Additional Information Purposes Only. Thank You!</div>
+        </div>
+
+    </form>
+
+    <button class="btn-order" type="placeorder">ORDER PLACED</button>
+
+    <button class="btn-cancel" type="placeorder">CANCEL</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
